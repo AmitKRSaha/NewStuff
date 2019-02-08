@@ -14,9 +14,10 @@ import { TabsComponent } from './contentchild/tabs/tabs.component';
 import { ParentTabsComponent } from './contentchild/parent-tabs/parent-tabs.component';
 import { HostParentComponent } from './host/host-parent/host-parent.component';
 import { HostChildDirective } from './host/host-child.directive';
+import { HostChildListnerDirective } from './host/host-child-listner.directive';
 
 @NgModule({
-  declarations: [AttributeComponent, TestDirective, ViewchildrenComponent, ChildComponentForViewchildComponent, ParentViewchildComponent, ChildViewchildComponent, TapComponent, TapsComponent, ParentTapsComponent, TabsComponent, ParentTabsComponent, HostParentComponent, HostChildDirective],
+  declarations: [AttributeComponent, TestDirective, ViewchildrenComponent, ChildComponentForViewchildComponent, ParentViewchildComponent, ChildViewchildComponent, TapComponent, TapsComponent, ParentTapsComponent, TabsComponent, ParentTabsComponent, HostParentComponent, HostChildDirective, HostChildListnerDirective],
   imports: [
     CommonModule,
     DecoratorsRoutingModule
