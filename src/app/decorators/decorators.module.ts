@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DecoratorsRoutingModule } from './decorators-routing.module';
-import { AttributeComponent } from './attribute/attribute.component';
+import { AttributeComponent, TestDirective } from './attribute/attribute.component';
 
 @NgModule({
-  declarations: [AttributeComponent],
+  declarations: [AttributeComponent, TestDirective],
   imports: [
     CommonModule,
     DecoratorsRoutingModule

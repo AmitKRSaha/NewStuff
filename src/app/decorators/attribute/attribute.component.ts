@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Directive, Attribute } from '@angular/core';
 
 @Component({
   selector: 'app-attribute',
@@ -12,4 +12,13 @@ export class AttributeComponent implements OnInit {
   ngOnInit() {
   }
 
+}
+
+@Directive({
+  selector: '[appTest]'
+})
+export class TestDirective {
+  constructor(@Attribute('type') type ) {
+    console.log(type); // text
+  }
 }
