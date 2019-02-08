@@ -14,6 +14,7 @@ export class AttributeComponent implements OnInit {
 
 }
 
+// Returns the value of the specified attribute from the host
 @Directive({
   selector: '[appTest]'
 })
