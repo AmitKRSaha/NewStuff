@@ -17,7 +17,12 @@ import { HostChildDirective } from './host/host-child.directive';
 import { HostChildListnerDirective } from './host/host-child-listner.directive';
 
 @NgModule({
-  declarations: [AttributeComponent, TestDirective, ViewchildrenComponent, ChildComponentForViewchildComponent, ParentViewchildComponent, ChildViewchildComponent, TapComponent, TapsComponent, ParentTapsComponent, TabsComponent, ParentTabsComponent, HostParentComponent, HostChildDirective, HostChildListnerDirective],
+  declarations: [
+    AttributeComponent, TestDirective, ViewchildrenComponent,
+    ChildComponentForViewchildComponent, ParentViewchildComponent,
+    ChildViewchildComponent, TapComponent, TapsComponent, ParentTapsComponent,
+    TabsComponent, ParentTabsComponent, HostParentComponent, HostChildDirective,
+     HostChildListnerDirective],
   imports: [
     CommonModule,
     DecoratorsRoutingModule
