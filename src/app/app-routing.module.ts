@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'attribute', loadChildren: './decorators/decorators.module#DecoratorsModule'},
-  { path: 'map',  loadChildren: './map/map.module#MapModule'}
 ];
 
 @NgModule({
