@@ -29,13 +29,32 @@
         </div>
       </li>
 
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Diff Stuff
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/grid">Ag-Grid</a>
+          </div>
+        </li>
+
     </ul>
   </div>
 </nav>
+<div class="container">
+    <router-outlet></router-outlet>
+  </div>
 
 <div class="container">
-    <app-pizzas></app-pizzas>
-  <router-outlet></router-outlet>
+  <app-pizzas></app-pizzas>
 </div>
+
+<ag-grid-angular
+    style="width: 500px; height: 500px;"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
 
 
